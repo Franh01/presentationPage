@@ -738,7 +738,7 @@ portfolio .title::after
     top: 0;
     left: 0;
     background-color: var(--main-color);
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .about .points
@@ -751,3 +751,99 @@ portfolio .title::after
 
 
 /** Fin about */
+
+/** Contact */
+
+.contact
+{
+    width: 100%;
+    padding: 13.5rem 0 8.5rem 0;
+    background-color: var(--main-color);
+}
+
+.contact-box
+{
+    width: 100%;
+    background-color: var(--light-one);
+    border-radius: 45px;
+    padding: 5.5rem 4.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-info
+{
+    padding-right: 2rem;
+}
+
+.contact-form
+{
+    padding-left: 2rem;
+}
+
+.contact-info .title::after
+{
+    left: 0;
+    transform: initial;
+}
+
+.information-wrap
+{
+    margin-top: 2rem;
+}
+
+.information
+{
+    display: flex;
+    align-items: center;
+}
+
+.information:not(:last-child){
+    margin-bottom: 1.3rem;
+}
+
+.contact-icon
+{
+    background-color: var(--main-color);
+    border-radius: 50%;
+    min-width: 67px;
+    height: 67px;
+    display: inline-block;
+    color: var(--light-one);
+    text-align: center;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
+
+.contact-icon i
+{
+    line-height: 67px;
+}
+
+.info-text
+{
+    font-size: 1.4rem;
+    display: inline-block;
+
+}
+
+.contact-form .title::after
+{
+    display: none;
+}
+
+.contact-form .title
+{
+    margin: 0;
+}
+
+.contact-form .row
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(130px, 1fr));
+    grid-column-gap: 0.6rem;
+}
+
+
+/** Fin ontact */
