@@ -908,3 +908,13 @@ portfolio .title::after
     margin-top: 0.6rem;
 }
 /** Fin ontact */
+
+/* Footer */
+
+footer
+{
+    background-color: #222;
+    padding: 6rem 0;
+}
+
+/* Fin footer */
