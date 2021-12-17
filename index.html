@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+    <main>
+        <header id="header">
+            <div class="overlay overlay-lg">
+                <img src="./img/shapes/square.png" class="shape square" alt="">
+                <img src="./img/shapes/circle.png" class="shape circle" alt="">
+                <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt="">
+                <img src="./img/shapes/half-circle.png" class="shape half-circle2" alt="">
+                <img src="./img/shapes/x.png" class="shape xshape" alt="">
+                <img src="./img/shapes/wave.png" class="shape wave wave1" alt="">
+                <img src="./img/shapes/wave.png" class="shape wave wave2" alt="">
+                <img src="./img/shapes/wave.png" class="shape wave wave3" alt="">
+                <img src="./img/shapes/triangle.png" class="shape triangle1" alt="">
+                <img src="./img/shapes/triangle.png" class="shape triangle2" alt="">
+                <img src="./img/shapes/letters.png" class="letters" alt="">
+                <img src="./img/shapes/points1.png" class="points points1" alt="">
+            </div>
+
+            <nav>
+                <div class="container">
+                    <div class="logo">
+                        <img src="./img/logo.png" alt="">
+                    </div>
+
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#services">Servicios</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#about">Acerca de mí</a>
+                            </li>
+                            <li>
+                                <a href="#">Contacto</a>
+                            </li>
+                            <li>
+                                <a href="#" class="active">Contratame</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-content">
+                <div class="container grid-2">
+                    <div class="column-1">
+                        <h1 class="header-title">Francisco Lopez</h1>
+                        <p class="text">Hola, soy Francisco Lopez y soy un desarrollador web Full Stack.</p>
+                        <a href="#" class="btn">Descargar CV</a>
+                    </div>
+                    <div class="column-2 image">
+                        <img src="./img/shapes/points2.png" class="points points2" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title='¿Qué es lo que hago?'>Servicios</h3>
+                </div>
+
+                <div class="cards">
+                    <div class="card-wrap">
+                        <img src="/img/shapes/points3.png" class="points points1 points-sq" alt="">
+                        <div class="card">
+                            <div class="card-content">
+                                <img src="./img/code-icon.png" class="icon" alt="">
+                                <h3 class="title-sm">Desarrollo Web</h3>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi totam rerum non.</p>
+                                <a href="#" class="btn small">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <div class="background-bg">
+                <div class="overlay overlay-sm">
+                    <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt="">
+                    <img src="./img/shapes/half-circle.png" class="shape half-circle2" alt="">
+                    <img src="./img/shapes/square.png" class="shape square" alt="">
+                    <img src="./img/shapes/wave.png" class="shape wave" alt="">
+                    <img src="./img/shapes/circle.png" class="shape circle" alt="">
+                    <img src="./img/shapes/triangle.png" class="shape triangle" alt="">
+                    <img src="./img/shapes/x.png" class="shape xshape" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="Mis trabajos">Portfolio</h3>
+                </div>
+
+                <div class="section-body">
+                    <div class="filter">
+                        <button class="filter-btn active" data-filter='*'>Todos</button>
+                        <button class="filter-btn" data-filter='.individual'>Proyectos individuales</button>
+                        <button class="filter-btn" data-filter='.work'>Trabajos</button>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-item individual">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port1.png" alt="">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Pokefinder</h3>
+                                        <h5>Ver más</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item work">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port2.png" alt="">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Aim Trainer</h3>
+                                        <h5>Ver más</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="¿Quién soy?">Acerca de mí</h3>
+                </div>
+                <div class="section-body grid-2">
+                    <div class="column-1">
+                        <h3 class="title-sm">Hola, yo soy</h3>
+                        <p class="text">
+                            un desarrollador web Full Stack con preferencia en el front end, adquirí mis conocimientos en Henry, y también por mis propios medios, me gusta aprender cosas nuevas y mejorar constantemente.
+                        </p>
+                        <div class="skills">
+                            <div class="skill html">
+                                <h3 class="skill-title">HTML</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress='70%'></div>
+                                </div>
+                            </div>
+                            <div class="skill css">
+                                <h3 class="skill-title">CSS</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress='50%'></div>
+                                </div>
+                            </div>
+                            <div class="skill js">
+                                <h3 class="skill-title">JavaScript</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress='85%'></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Leer más</a>
+                    </div>
+                    <div class="column-2 image">
+                        <img src="./img/shapes/points4.png" class="points" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
