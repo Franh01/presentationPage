@@ -997,6 +997,12 @@ footer
     color: var(--main-color);
 }
 
+.copyright .text span a
+{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
 .followme-wrap
 {
     display: flex;
