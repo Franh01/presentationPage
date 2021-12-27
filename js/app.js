@@ -9,7 +9,7 @@ function language(){
     if (strUser === 'english') {
         document.title = 'Presentation';
         //* Links
-        document.getElementsByName('servicesLink').forEach(c => c.innerText = 'Services');
+        document.getElementsByName('servicesLink').forEach(c => c.innerText = 'Technologies');
         document.getElementsByName('aboutLink').forEach(c => c.innerText = 'About');
         document.getElementsByName('contactLink').forEach(c => c.innerText = 'Contact');
         //* End Links
@@ -49,7 +49,7 @@ function language(){
     } else {
         document.title = 'Presentación'
         //* Links
-        document.getElementsByName('servicesLink').forEach(c => c.innerText = 'Servicios');
+        document.getElementsByName('servicesLink').forEach(c => c.innerText = 'Tecnologías');
         document.getElementsByName('aboutLink').forEach(c => c.innerText = 'Acerca de mí');
         document.getElementsByName('contactLink').forEach(c => c.innerText = 'Contacto');
         //* End Links
