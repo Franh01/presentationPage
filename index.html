@@ -26,7 +26,13 @@
                 <img src="./img/shapes/letters.png" class="letters" alt="">
                 <img src="./img/shapes/points1.png" class="points points1" alt="">
             </div>
-
+            
+            <div class="language-switch">
+                <select name='language'>
+                    <option value="spanish" selected>Español</option>
+                    <option value="english">English</option>
+                </select>
+            </div>
             <nav>
                 <div class="container">
                     <div class="logo">
@@ -39,16 +45,16 @@
                                 <a href="#header">Home</a>
                             </li>
                             <li>
-                                <a href="#services">Servicios</a>
+                                <a href="#services" name='servicesLink'>Servicios</a>
                             </li>
                             <li>
                                 <a href="#portfolio">Portfolio</a>
                             </li>
                             <li>
-                                <a href="#about">Acerca de mí</a>
+                                <a href="#about" name='aboutLink'>Acerca de mí</a>
                             </li>
                             <li>
-                                <a href="#contact">Contacto</a>
+                                <a href="#contact" name='contactLink'>Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -59,8 +65,8 @@
                 <div class="container grid-2">
                     <div class="column-1">
                         <h1 class="header-title">Francisco Lopez</h1>
-                        <p class="text">Hola, soy Francisco Lopez y soy un desarrollador web Full Stack.</p>
-                        <a href="https://drive.google.com/uc?export=download&id=16rhb9G4bQMlJ-h9UO8_HZF1HKZSoaG86" class="btn">Descargar CV</a>
+                        <p name='presentationText' class="text">Hola, soy Francisco Lopez y soy un desarrollador web Full Stack.</p>
+                        <a name='downloadCV' href="https://drive.google.com/uc?export=download&id=16rhb9G4bQMlJ-h9UO8_HZF1HKZSoaG86" class="btn">Descargar CV</a>
                     </div>
                     <div class="column-2 image">
                         <img src="./img/shapes/points2.png" class="points points2" alt="">
@@ -72,7 +78,7 @@
         <section class="services section" id="services">
             <div class="container">
                 <div class="section-header">
-                    <h3 class="title" data-title='¿Qué es lo que hago?'>Tecnologías</h3>
+                    <h3 name='servTitle' class="title" data-title='¿Qué es lo que hago?'>Tecnologías</h3>
                 </div>
 
                 <div class="cards">
@@ -81,8 +87,8 @@
                         <div class="card">
                             <div class="card-content">
                                 <img src="./img/code-icon.png" class="icon" alt="">
-                                <h3 class="title-sm">¿Con qué tecnologías trabajo?</h3>
-                                <p class="text">
+                                <h3 name='scndTitleServ' class="title-sm">¿Con qué tecnologías trabajo?</h3>
+                                <p name='tecnologias' class="text">
                                     HTML, CSS, Bootstrap, JavaScript, ES6, React, Redux, Postman, NodeJS, Git, Bash, Express, Jest, Mocha, SQL, MySQL, Sequelize y PostgreSQL.
                                 </p>
                             </div>
@@ -106,14 +112,14 @@
             </div>
             <div class="container">
                 <div class="section-header">
-                    <h3 class="title" data-title="Mis trabajos">Portfolio</h3>
+                    <h3 name='portfolioTitle' class="title" data-title="Mis trabajos">Portfolio</h3>
                 </div>
 
                 <div class="section-body">
                     <div class="filter">
-                        <button class="filter-btn active" data-filter='*'>Todos</button>
-                        <button class="filter-btn" data-filter='.individual'>Proyectos personales</button>
-                        <button class="filter-btn" data-filter='.work'>Trabajos</button>
+                        <button name="allPortfolio" class="filter-btn active" data-filter='*'>Todos</button>
+                        <button name="individualPortfolio" class="filter-btn" data-filter='.individual'>Proyectos personales</button>
+                        <button name="jobsPortfolio" class="filter-btn" data-filter='.work'>Trabajos</button>
                     </div>
                     <div class="grid">
                         <div class="grid-item individual">
@@ -124,7 +130,7 @@
                                         <div class="plus"></div>
                                         <div class="img-description">
                                             <h3>Aim trainer</h3>
-                                            <h5>Ver más</h5>
+                                            <h5 name='seeMore'>Ver más</h5>
                                         </div>
                                     </div>
                                 </a>
@@ -138,7 +144,7 @@
                                         <div class="plus"></div>
                                         <div class="img-description">
                                             <h3>Pokefinder</h3>
-                                            <h5>Ver más</h5>
+                                            <h5 name='seeMore'>Ver más</h5>
                                         </div>
                                     </div>
                                 </a>
@@ -152,13 +158,13 @@
         <section class="about section" id="about">
             <div class="container">
                 <div class="section-header">
-                    <h3 class="title" data-title="¿Quién soy?">Acerca de mí</h3>
+                    <h3 name='aboutTitle' class="title" data-title="¿Quién soy?">Acerca de mí</h3>
                 </div>
                 <div class="section-body grid-2">
                     <div class="column-1">
-                        <h3 class="title-sm">Hola, yo soy</h3>
-                        <p class="text">
-                            un desarrollador web Full Stack con preferencia en el front end, adquirí mis conocimientos en <a href="https://www.soyhenry.com/" target="_blank">Henry</a>, y también por mis propios medios, me gusta aprender cosas nuevas y mejorar constantemente.
+                        <h3 name='prePresentationAbout' class="title-sm">Hola, yo soy</h3>
+                        <p  name='presentationAbout'  class="text">
+                            un desarrollador web Full Stack con preferencia en el front end, adquirí mis conocimientos en <a href="https://www.soyhenry.com/" target="_blank">Henry</a>, y también por mis propios medios, me gusta siempre aprender cosas nuevas y mejorar constantemente.
                         </p>
                         <div class="skills">
                             <div class="skill html">
@@ -186,7 +192,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/Franh01" class="btn" target="_blank">Leer más</a>
+                        <a name='readMore' href="https://github.com/Franh01" class="btn" target="_blank">Leer más</a>
                     </div>
                     <div class="column-2 image">
                         <img src="./img/shapes/points4.png" class="points" alt="">
@@ -199,8 +205,8 @@
             <div class="container">
                 <div class="contact-box">
                     <div class="contact-info">
-                        <h3 class="title">Contactame</h3>
-                        <p class="text">Comunicate conmigo mediante.</p>
+                        <h3 name='contactTitle' class="title">Contactame</h3>
+                        <p name='contactSubT' class="text">Comunicate conmigo mediante.</p>
                         <div class="information-wrap">
                             <div class="information">
                                 <div class="contact-icon">
@@ -250,16 +256,16 @@
                     <h3 class="title-sm">Links</h3>
                     <ul class="footer-links-div">
                         <li>
-                            <a href="#services">Servicios</a>
+                            <a href="#services" name='servicesLink'>Servicios</a>
                         </li>
                         <li>
                             <a href="#portfolio">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#about">Acerca de mí</a>
+                            <a href="#about" name='aboutLink'>Acerca de mí</a>
                         </li>
                         <li>
-                            <a href="#contact">Contacto</a>
+                            <a href="#contact" name='contactLink'>Contacto</a>
                         </li>
                     </ul>
                 </div>
