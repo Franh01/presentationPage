@@ -46,6 +46,10 @@ function language(){
         document.getElementsByName('contactTitle')[0].innerText = 'Contact me';
         document.getElementsByName('contactSubT')[0].innerText = 'Communicate with me through.';
         //* End Contact
+
+        //* Resume Link
+        document.getElementsByName('downloadCV')[0].href = 'https://drive.google.com/uc?export=download&id=1xKsJn9SS5ZXDIAZeoFpfoCEn6DnASOFb';
+        //* End Resume Link
     } else {
         document.title = 'Presentación'
         //* Links
@@ -86,6 +90,10 @@ function language(){
         document.getElementsByName('contactTitle')[0].innerText = 'Contactame';
         document.getElementsByName('contactSubT')[0].innerText = 'Comunicate conmigo mediante.';
         //* End Contact
+
+        //* Resume Link
+        document.getElementsByName('downloadCV')[0].href = 'https://drive.google.com/uc?export=download&id=1Zad-DyB1MOKuwXapps7f84MTAqGm2bby';
+        //* End Resume Link
     }
 }
 e.onchange=language;
