@@ -351,4 +351,33 @@
     <script src="./js/isotope.pkgd.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
+<script>
+    window.addEventListener("message", function (event) {
+      if (event.origin !== "https://qawidget.feelsocial.app") {
+        return;
+      }
+
+      if (event.data === "open") {
+        const widget = document.getElementById("widgetIframe");
+        widget.style.height = "100vh";
+      } else if (event.data === "closed") {
+        const widget = document.getElementById("widgetIframe");
+        widget.style.height = "10vh";
+      }
+    });
+  </script>
+  <iframe
+    id="widgetIframe"
+    src="https://qawidget.feelsocial.app"
+    style="
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      height: 10vh;
+      width: 415px;
+      border-radius: 8px 8px 0 0;
+      border: none;
+    "
+  >
+  </iframe>
 </html>
