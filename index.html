@@ -365,12 +365,12 @@
           type: "windowSize",
           payload: windowSize,
         },
-        "https://widget.feelsocial.app"
+        "https://qawidget.feelsocial.app"
       );
     }
 
     window.addEventListener("message", function (event) {
-      if (event.origin !== "https://widget.feelsocial.app") {
+      if (event.origin !== "https://qawidget.feelsocial.app") {
         return;
       }
 
@@ -405,7 +405,7 @@
   </style>
   <iframe
     id="widgetIframe"
-    src="https://widget.feelsocial.app/895be159-c220-4555-a9e7-220e6630467d"
+    src="https://qawidget.feelsocial.app/895be159-c220-4555-a9e7-220e6630467d"
   >
   </iframe>
 </html>
