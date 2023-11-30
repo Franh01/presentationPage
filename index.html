@@ -352,8 +352,25 @@
     <script src="./js/app.js"></script>
 </body>
 <script>
+    function sendWindowSizeToWidget() {
+      const widgetIframe = document.getElementById("widgetIframe");
+
+      const windowSize = {
+        width: window.innerWidth,
+        height: window.innerHeight,
+      };
+
+      widgetIframe.contentWindow.postMessage(
+        {
+          type: "windowSize",
+          payload: windowSize,
+        },
+        "https://widget.feelsocial.app"
+      );
+    }
+
     window.addEventListener("message", function (event) {
-      if (event.origin !== "https://qawidget.feelsocial.app") {
+      if (event.origin !== "https://widget.feelsocial.app") {
         return;
       }
 
@@ -362,23 +379,33 @@
         widget.style.height = "100vh";
       } else if (event.data === "closed") {
         const widget = document.getElementById("widgetIframe");
-        widget.style.height = "10vh";
+        widget.style.height = "20vh";
       }
     });
+
+    window.addEventListener("load", sendWindowSizeToWidget);
+    window.addEventListener("resize", sendWindowSizeToWidget);
   </script>
-  <iframe
-    id="widgetIframe"
-    src="https://qawidget.feelsocial.app/59ab4342-6360-40b4-a7ae-65a7b28e97c5"
-    style="
+  <style>
+    #widgetIframe {
       position: fixed;
       bottom: 0;
       right: 0;
-      height: 10vh;
-      width: 415px;
+      height: 20vh;
+      width: 420px;
       border-radius: 8px 8px 0 0;
       border: none;
-	  z-index: 200000;
-    "
+      z-index: 200000;
+    }
+    @media screen and (max-width: 600px) {
+      #widgetIframe {
+        width: 100%;
+      }
+    }
+  </style>
+  <iframe
+    id="widgetIframe"
+    src="https://widget.feelsocial.app/895be159-c220-4555-a9e7-220e6630467d"
   >
   </iframe>
 </html>
