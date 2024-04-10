@@ -367,6 +367,12 @@
         },
         "https://qawidget.feelsocial.app"
       );
+
+    //! This is important to send UTM data
+    
+    const parentUrl = window.location.href;    
+    widgetIframe.contentWindow.postMessage(parentUrl, '*');
+
     }
 
     window.addEventListener("message", function (event) {
@@ -385,6 +391,10 @@
 
     window.addEventListener("load", sendWindowSizeToWidget);
     window.addEventListener("resize", sendWindowSizeToWidget);
+
+
+    
+    
   </script>
   <style>
     #widgetIframe {
@@ -404,8 +414,9 @@
     }
   </style>
   <iframe
+  title="Widget"
     id="widgetIframe"
-    src="https://qawidget.feelsocial.app/701ecfb3-9a27-475e-917b-01a3de40d184"
+    src="http://localhost:4173/701ecfb3-9a27-475e-917b-01a3de40d184"
   >
   </iframe>
 </html>
